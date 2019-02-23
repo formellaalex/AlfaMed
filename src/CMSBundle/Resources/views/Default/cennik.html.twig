@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" style="text-align: center">
+ <h3 class="subheader title">Cennik </h3>
+	<div class="row">
+		<div class="large-6 medium-6 small-12 columns">
+	        <div class="large-12 medium-12 small-12 columns"  style="margin-bottom: 4%">
+	           	<a> <h4 class="cennik_title title uslugi_click"> Stomatologia </h4> </a>
+	            	<ul class="list_none blue">
+	            		<li> Badnie jamy ustnej - <em style="font-style: normal; color: #DE001A"> gratis </em> </li>
+						<li> Znieczulenie – <em style="font-style: normal; color: #DE001A"> gratis </em> </li>
+						<li> Wypełnienie zęba – 120 - 150zł </li>
+						<li> Odbudowa zęba – 250 - 350zł </li>
+						<li> Licówki kompozytowe – 250 - 350zł </li>
+						<li> Scaling z piaskowaniem – 140zł </li>
+						<li> Lakowanie zębów – 40zł </li>
+						<li> Leczenie kanałowe – 150 - 250zł </li>
+	            	</ul>
+	        </div>
+	        <div class="large-12 medium-12 small-12 columns" style="margin-bottom: 4%">
+	           <h4 class="cennik_title title"> Protetyka </h4>
+	           	<ul class="list_none blue">
+	           		<li> Korona porcelanowa – 700zł</li>
+					<li> Korona pełnoceramiczna – 1200zł</li>
+					<li> Licówka porcelanowa – 1200zł</li>
+					<li> Proteza akrylowa częściowa – 700zł</li>
+					<li> Proteza całkowita – 800zł</li>
+					<li> Proteza szkieletowa – 1500zł</li>
+					<li> Proteza na zasuwach – 2500zł</li>
+					<li> Wkład koro-korz – 150 - 300zł </li>
+	           	</ul>
+	            
+	        </div>
+
+	        <div class="large-12 medium-12 small-12 columns" style="margin-bottom: 4%">
+	            <ul class="list_none blue">
+	            <h4 class="cennik_title title"> Medycyna estetyczna </h4>
+	            	<li>Korekta wokół oczu (kurzych łapek) – 500zł</li>
+					<li>Korekta bruzdy miedzy brwiami – 500zł</li>
+					<li>Korekta fałdów nosowo-wargowych – 700zł (wypełniacz)</li>
+	            </ul>
+	        </div>
+
+	    </div>
+	    <div class="large-6 medium-6 small-12 columns">
+	    	<div class="large-12 medium-12 small-12 columns"  style="margin-bottom: 4%">
+	           	<h4 class="cennik_title title"> Ortodoncja </h4>
+	           	<ul class="list_none blue">
+	           		<li>Konsultacja – 80zł</li>
+					<li>Aparat stały metalowy – 1900 zł</li>
+					<li>Aparat estetyczny – 2700 - 3000zł</li>
+					<li>Aparat ruchomy – 450 – 600 zł</li>
+					<li>Wizyta kontrolna 1 łuk – 100 zł</li>
+					<li>Wizyta kontrolna 2 łuki – 150zł</li>
+	           	</ul>
+	            
+	        </div>
+
+	        <div class="large-12 medium-12 small-12 columns" style="margin-bottom: 4%">
+	           <h4 class="cennik_title title"> Implanty </h4>
+	           	<ul class="list_none blue">
+	           		<li> Wszczepienie implantu – 2000 - 2400zł</li>
+					<li> Korona na implancie – 2000 zł </li>
+	           	</ul>
+	            
+	        </div>
+	        <div class="large-12 medium-12 small-12 columns" style="margin-bottom: 4%">
+	           <h4 class="cennik_title title"> Wybielanie zębów </h4>
+	           <ul class="list_none blue">
+	           		<li> Nakładkowe – 700zł </li>
+					<li> Jednoczasowe – 900zł </li>
+	           </ul>
+	            
+	        </div>
+
+	        <div class="large-12 medium-12 small-12 columns">
+
+	            <h4 class="cennik_title title uslugi_click"> Chirurgia stomatologiczna </h4>
+		           <ul class="list_none blue">
+		           		<li> Usunięcie zęba – 150 - 200 zł </li>
+						<li> Usunięcie zęba chirurgiczne – 250zł </li>
+						<li> Usunięcie ósemki – 250 - 500 zł </li>
+						<li> Resekcja – 400 zł </li>
+						<li> Usunięcie złamanego korzenia – 300 zł </li>
+		           </ul>
+	        </div>
+	    </div>
+    </div>
+	
+</section>
+
+<footer>
+	{% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>

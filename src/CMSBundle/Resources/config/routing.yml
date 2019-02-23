@@ -1,0 +1,70 @@
+cms_homepage:
+    path:     /
+    defaults: { _controller: CMSBundle:Default:index }
+
+cms_admin_log:
+    path:    /admin
+    defaults: { _controller: CMSBundle:Default:adminLog}
+
+cms_admin_index:
+    path:    /admin/index
+    defaults: { _controller: CMSBundle:Default:adminIndex}
+
+cms_admin_ustawienia:
+    path:    /admin/ustawienia
+    defaults: { _controller: CMSBundle:Default:adminUstawienia}
+
+cms_admin_promocje:
+    path:    /admin/promocja
+    defaults: { _controller: CMSBundle:Default:adminPromocje}
+
+cms_admin_porady:
+    path:     /admin/porada
+    defaults: { _controller: CMSBundle:Default:adminPorady}
+
+cms_admin_add_promotion:
+    path:    /addPromocja
+    defaults: { _controller: CMSBundle:Default:adminAddPromocja}
+    methods:  [POST]
+
+cms_admin_add_tip:
+    path:    /addPorada
+    defaults: { _controller: CMSBundle:Default:adminAddPorada}
+    methods:  [POST]
+
+cms_login:
+    path:    /login
+    defaults: {_controller: CMSBundle:Default:login}
+    methods:  [POST]
+
+cms_logout:
+    path:    /logout
+    defaults: {_controller: CMSBundle:Default:logout}
+    methods:  [POST]
+
+cms_upload:
+    path:    /upload
+    defaults: {_controller: CMSBundle:Default:upload}
+    methods:  [POST]
+
+cms_promocje:
+    path:    /raty_promocje/promocje/
+    defaults: { _controller: CMSBundle:Default:promocje}
+
+cms_promocje_id:
+    path:    /raty_promocje/promocje/{id}
+    defaults: { _controller: CMSBundle:Default:promocjeId}
+
+cms_porady:
+    path:    /porady
+    defaults: { _controller: CMSBundle:Default:porady}
+
+cms_porady_id:
+    path:    /porady/{id}
+    defaults: { _controller: CMSBundle:Default:poradyId}
+
+cms_basic:
+    path:    /{page}
+    defaults: { _controller: CMSBundle:Default:basic}
+
+

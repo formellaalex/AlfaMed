@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns" style="margin-top: 5%">
+            <ul class="large-block-grid-3 small-block-grid-2 uslugi" style="text-align: center;">  
+               {% for item in porady %}
+                    <li class="title"> <a class="blue" href="porady/{{ item.id }}.html"> {{ item.tytul }} <br /><img src="{{ asset('bundles/framework/uploads/' )}}{{item.path}}" alt="Brak zdjęcia"/> </a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+    {% include 'CMSBundle::Templates/footer.html.twig' %}
+
+</footer>
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

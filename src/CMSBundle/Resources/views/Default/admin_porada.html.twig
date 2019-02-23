@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    <div class="row">
+        <div class="large-12 columns">
+            <img id="admin_logo" src="{{ asset('bundles/framework/images/logo_2.png') }}" alt="Brak zdjęcia" />
+            <span id="admin_title">Panel administracyjny</span>
+        </div>
+    </div>    
+</header>
+
+<section id="admin_content" >
+    <div class="row">
+        <div class="large-6 large-centered columns">
+            <h4 class="title"> Dodaj nową poradę </h4>
+            <br />
+            <form method="post" id="form_porada" action="/addPorada" enctype="multipart/form-data" name="add_porada">
+                <input type="text" name="tytul" placeholder="Tytuł porady" id="form_tytul"/>
+                <textarea name="tresc" placeholder="Treść porady" id="form_tresc"></textarea>
+                <input type="file" name="file_upload" />
+                <button class="admin_button"> Dodaj </button>
+            </form>
+            <form action="/admin/index" method="get"><button class="admin_button"> Powrót </button> </form>
+
+        </div>
+    </div>
+</section>
+
+<footer id="admin_footer">
+   <span> &copy; by Axel Block &middot; </span> <form method="post" action='/logout'> <button class="admin_button"> Wyloguj </button > </form>
+</footer>
+
+
+<script>
+    $(document).foundation();
+    $( "#form_porada" ).submit(function(e) {
+        if($("#form_tresc").val().length == 0 || $("#form_tytul").val().length == 0){
+            alert("Pola nie mogą być puste!");
+            return false;
+        }
+        else if(!validateExt(document.getElementById("form_porada"))){
+            return false;
+        }
+        else if ($("#form_tresc").val().toLowerCase().indexOf("<script") >= 0 || $("#form_tytul").val().toLowerCase().indexOf("<script") >= 0){
+            //$("#form_tresc").val().replace("<", "siusiu");
+            alert("Niedozwolony ciąg znaków : <script");
+            return false;
+        }
+    });
+
+
+    var _validFileExtensions = [".jpg", ".jpeg", ".bmp", ".gif", ".png"];    
+    function validateExt(oForm) {
+        var arrInputs = oForm.getElementsByTagName("input");
+        for (var i = 0; i < arrInputs.length; i++) {
+            var oInput = arrInputs[i];
+            if (oInput.type == "file") {
+                var sFileName = oInput.value;
+                if (sFileName.length > 0) {
+                    var blnValid = false;
+                    for (var j = 0; j < _validFileExtensions.length; j++) {
+                        var sCurExtension = _validFileExtensions[j];
+                        if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                            blnValid = true;
+                            break;
+                        }
+                    }
+                    
+                    if (!blnValid) {
+                        alert("Niewłaściwe rozszerzenia pliku " + sFileName + ", dostępne rozszerzenia: " + _validFileExtensions.join(", "));
+                        return false;
+                    }
+                }
+            }
+        }
+      
+        return true;
+    }
+</script>
+</body>
+</html>

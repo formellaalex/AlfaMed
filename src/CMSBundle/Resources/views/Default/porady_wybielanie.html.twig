@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns" style="margin-top: 5%">
+            <h2 class="title center margin_title">WYBIELANIE ZĘBÓW - PORADY</h2>
+			<p class="blue">Wybielanie zębów pod kontrolą stomatologa jest bezpieczną i od wielu lat stosowaną metodą poprawienie estetyki zębów.
+			Przed  wybielaniem  zębów prosimy 3-4 dni wcześniej zacząć stosować pastę Sensodyne CLASSIC  i używać jej przez cały okres wybielania - zmniejszy wrażliwość zębów.<br /> 
+			Podczas wybielania zębów i 2 tyg. po wybieleniu: </p>
+			<ul class="blue">
+			<li>  stosować białą dietę (dużo naturalnych jogurtów, białego sera, mleko, kawę z mlekiem, słabą herbatę z cytryną)</li>
+			<li> unikać czarnej kawy, mocnej herbaty, Coca coli i innych napojów sztucznie barwionych, również naturalnych soków z czarnej porzeczki, buraków, itp. </li>
+			<li>Nie palić lub znacznie ograniczyć palenie. </li> </ul> <br />
+			<p class="blue"> Pod koniec wybielania pojawia się nadwrażliwość, która po czasie mija. Zęby są już wybielone i efekt jest trwały. </p>
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+    {% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

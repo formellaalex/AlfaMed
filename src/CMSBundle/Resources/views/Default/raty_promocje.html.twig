@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" >
+	<div class="row" style="padding-top: 2%">
+        <div class="large-12 columns">
+            <h3 class="title"> PROMOCJE </h3>
+             <p class="blue"> Kliknij <a href="/raty_promocje/promocje" style="text-decoration: underline"> tutaj</a>, aby poznać najnowsze promocje na usługi w naszym gabinecie. </p>
+            <br /><br />
+            <h3 class="title"> RATY </h3>
+            <p class="content_opis blue">
+			 Jest możliwość leczenia na raty. O szczegóły zapytaj konsultanta - 531 527 004 lub 58 719 94 13.
+            </p>
+
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+    {% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

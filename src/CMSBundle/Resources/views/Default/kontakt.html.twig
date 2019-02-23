@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+<section id="content" >
+ <h3 class="subheader title" style="text-align: center">Kontakt </h3>
+ <br /><br /><br /><br />
+ 	<div class="row">
+ 		<div class="large-6 medium-6 small-6 columns">
+ 			<img src="{{ asset('bundles/framework/images/mapa.png')}}" style="max-width: 75%" alt="Brak zdjęcia"/>
+ 		</div>
+
+ 		<div class="large-6 medium-6 small-6 columns blue">
+ 			<h3 class="blue"> Tel. komórkowy: 501 560 084</h3>
+ 			<br /><br /><br />
+ 			<h4 class="blue"> Gabinet stomatologiczny Alfamed <br />
+ 			Gdynia, ul. Świętojańska 78/6 </h4> <p class="blue"> (Na przeciwko pizzerii "Gdynianka" <br /> między ul. Żwirki i Wigury, a ul. Kilińskiego)</p>
+ 			
+
+ 		</div>
+
+ 	</div>
+	
+</section>
+
+<footer>
+    {% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="stylesheet" href="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="stylesheet" href="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    <div class="row">
+        <div class="large-12 columns">
+            <img id="admin_logo" src="{{ asset('bundles/framework/images/logo_2.png') }}"  alt="Brak zdjęcia"/>
+            <span id="admin_title">Panel administracyjny</span>
+        </div>
+    </div>    
+</header>
+
+<section id="admin_content" >
+    <div class="row">
+        <div class="large-6 large-centered columns">
+            <h4 class="title"> Zaloguj się jako administrator </h4>
+            <br />
+            <form method="post" action="/login">
+                <input type="text" placeholder="Login" name="login" />
+                <input type="text" placeholder="Hasło" name="haslo" />
+                <button class="admin_button"> Zaloguj </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer id="admin_footer">
+   &copy; by Axel Block &middot;
+</footer>
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

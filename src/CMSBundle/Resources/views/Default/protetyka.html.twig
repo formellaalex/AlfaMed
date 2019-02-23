@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns">
+            <h2 style="text-align: center" class="uslugi_opis"> PROTETYKA </h2>
+				<p class="blue">
+					Proponujemy Państwu pełne spektrum rozwiązań protetycznych współpracujemy z renomowanymi pracowniami protetycznymi. Udzielamy gwarancji na wykonane prace.
+					Protetyką w naszym gabinecie zajmuje się lek.stom Grażyna Muszyńska ze specjalizacją ze stomatologii ogólnej.
+					Porady protetyczne <em style="font-style: normal;color: #DE001A"> gratis </em>. Serdecznie zapraszamy na poradę.
+
+					Wykonujemy następujące prace protetyczne:
+					</p>
+					<ul class="blue">
+					<li> Korony pełnoceramiczne na cyrkonie </li>
+					<li> Korony  porcelanowe na metalu  </li>
+					<li> Korony porcelanowe na podbudowie złota </li>
+					<li> Licówki porcelanowe</li>
+					<li> Protezy na zasuwy lub zatrzaski</li>
+					<li> Protezy szkieletowe</li>
+					<li> Protezy akrylowe</li>
+					<li> Protezy na 2-uch implantach kulkowych </li>
+					<li> Szyny relaksacyjne u pacjentów którzy ścierają zęby (zgrzytają lub zaciskaja) - bruksizm </li>
+					<li> Podnosimy zwarcie metodami zachowawczymi i protetycznymi </li>
+				</ul>
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+	{% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

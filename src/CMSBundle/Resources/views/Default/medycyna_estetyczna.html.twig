@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns">
+            <h2 style="text-align: center" class="uslugi_opis">BOTOKS I KWAS HIALURONOWY</h2>
+            <p class="blue"> Zabiegi medycyny estetycznej mogą przedłużyć młody wygląd o 10 lat podając botoks który niweluje marszczenie się danej partii mięśni lub kwas hialuronowy, który wypełnia bruzdy.<br />
+            Wykonujemy zbiegi: </p>
+            <ul class="blue">   
+            <li>Likwidacja kurzych łapek – zmarszczek wokół oczu </li>
+            <li>Likwidacja lwiej bruzdy – bruzda miedzy brwiami </li>
+            <li>Wypełniamy bruzdę nosowo- wargową przy użyciu kwasu hialuronowego
+            Pracujemy preparatami francuskiej firmy. </li> </ul>
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+	
+   <div class="large-12 medium-12 small-12 columns" style="background: #00bd9c; position: relative; top:16px;text-align: center; padding: 10px 0 10px 0">
+	   <div style="position: relative;">
+		   <span class="section_offer">
+		   			Stomatologia &middot
+		   </span>
+		  	<span class="section_offer">
+		   			Protetyka &middot
+		   </span>
+		   <span class="section_offer">
+		   			Ortodoncja &middot
+		   </span>
+		   <span class="section_offer">
+		   		Wybielanie zębów 
+		   </span>
+
+		</div>
+		<div>
+
+
+		   <span class="section_offer">
+		   		Implanty &middot
+		   </span>
+
+
+		   <span class="section_offer">
+		   		Botoks &middot
+		   </span>
+
+		<span class="section_offer">
+		   		Kwas hialuronowy 
+		   </span>
+
+		</div>
+	   </div>
+	</div>
+
+</footer>
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns">
+            <h2 class="title" style="text-align: center"> WYBIELANIE  ZĘBÓW </h2>
+
+            <p class="blue"> Wybielanie zębów jest znaną i od wielu lat stosowaną metodą zmiany uśmiechu z ładnego w piękny .Dzięki wybielaniu zęby osiągają 
+            śnieżną biel i wysoki połysk. <br />
+            W gabinecie stosujemy</p>
+            <ul class="list_none blue">
+
+            <li> 1. Wybielanie nakładkowe </li>
+            <li> 2. Wybielanie gabinetowe w ciągu 1 godziny.</li>
+
+            </ul>
+
+            <h4 class="title"> I metoda </h4> 
+            <p class="blue"> W gabinecie polecamy metodę nocnego wybielania z użyciem nakładek na zęby. Dzięki tej metodzie możemy wybielić zęby o 5 do 10 odcieni. Pacjent ma indywidualnie wykonane nakładki na zęby w których śpi 5-7 nocy. Po każdej nocy budzi się z jaśniejszymi zębami. W tej metodzie mamy możliwość wybielić mocniej lub słabiej w zależności od oczekiwań pacjenta. Efekt jest trwały. Dla podtrzymania efektu pacjent dobiela zęby raz w roku. 100% zadowolonych pacjentów. </p>
+            <h4 class="title"> II metoda </h4> 
+            <p class="blue"> II metoda jest jednoczasowa w ciągu jednej godziny. W tej metodzie zęby wybielają się szybko i efekt jest mniej trwały. Dlatego żeby podtrzymać efekt należy 2-3 razy do roku dobielić zęby np. metoda nakładkową. </p>
+            <h4 class="title">  WYBIELANIE   POJEDYNCZYCH  ZĘBÓW </h4>
+            <p class="blue">Dotyczy zębów martwych po leczeniu kanałowym. Usuwamy stare wypełnienie i do środka zakładamy żel wybielający na 7 dni. Wkładkę wybielającą wymieniamy 2-4 razy aż ząb się wybieli i ponownie wypełniamy ząb. </p>
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+    {% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

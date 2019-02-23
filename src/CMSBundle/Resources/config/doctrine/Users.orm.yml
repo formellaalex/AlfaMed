@@ -1,0 +1,27 @@
+CMSBundle\Entity\Users:
+    type: entity
+    table: null
+    repositoryClass: CMSBundle\Repository\UsersRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        login:
+            type: string
+            length: 255
+            unique: true
+        haslo:
+            type: string
+            length: 255
+        token:
+            type: string
+            length: 255
+            nullable: true
+        tokenExpire:
+            type: datetime
+            nullable: true
+            column: token_expire
+    lifecycleCallbacks: {  }

@@ -1,0 +1,35 @@
+header .row:first-child {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+
+#content .columns:first-child {
+
+}
+
+#content .columns:nth-child(2) {
+
+}
+
+#profile-img {
+    position: relative;
+    top: -49px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer .columns {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e3e3e3;
+}
+
+.wpis {
+    margin-top: 10px !important;
+    border:1px solid #d1d1d1;
+}

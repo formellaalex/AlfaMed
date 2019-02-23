@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns">
+            <ul class="large-block-grid-3 small-block-grid-2 uslugi" style="text-align: center;">
+                <li class="title"> <a href="stomatologia"> Stomatologia  <br /><img src="{{ asset('bundles/framework/images/zdjecie_lusterko_pod_menu.jpg')}}" alt="Brak zdjęcia"/> </a></li>
+                <li class="title"> <a href="ortodoncja"> Ortodoncja <br /><img src="{{ asset('bundles/framework/images/ortodoncja2.jpg' ) }}" alt="Brak zdjęcia" /> </a></li>
+                <li class="title"><a href="protetyka"> Protetyka  <br /><img src="{{ asset('bundles/framework/images/protetyka.jpg' )}}" alt="Brak zdjęcia"/> </a></li> 
+                <li class="title"> <a href="implanty"> Implanty <br /> <img src="{{ asset('bundles/framework/images/implant.jpg')}}" alt="Brak zdjęcia"/> </a></li>
+                <li class="title"> <a href="wybielanie_zebow"> Wybielanie zębów <br /> <img src="{{ asset('bundles/framework/images/wybielanie2.png')}}" alt="Brak zdjęcia"/> </a> </li>
+                <li class="title"> Medycyna estetyczna <br /><img src="{{ asset('bundles/framework/images/botoks.jpg')}}" alt="Brak zdjęcia"/> </li>
+            </ul>
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+    {% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

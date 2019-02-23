@@ -1,0 +1,22 @@
+CMSBundle\Entity\Porady:
+    type: entity
+    table: null
+    repositoryClass: CMSBundle\Repository\PoradyRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tytul:
+            type: string
+            length: '500'
+        tresc:
+            type: string
+            length: '10000'
+        picturePath:
+            type: string
+            length: '600'
+            column: picture_path
+    lifecycleCallbacks: {  }

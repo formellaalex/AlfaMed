@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns">
+            <h2 style="text-align: center" class="uslugi_opis"> STOMATOLOGIA </h2>
+			<p class="uslugi_opis"> Leczymy zęby bezboleśnie. Jest dla nas bardzo ważne aby pacjent nie odczuwał bólu w trakcie leczenia i po zabiegu. Znieczulenie do zbiegu jest gratis. Używamy specjalnych karpul do podania znieczulenia z bardzo cieniutkimi igłami (takie same są używane do bezbolesnego podawania insuliny), dzięki temu znieczulenie jest podawane praktycznie bezboleśnie.
+			W gabinecie jest RTG i mamy możliwość diagnostyki rtg na miejscu bez schodzenia z fotela.
+			Leczenie kanałowe przeprowadzamy w znieczuleniu po dokładnym zmierzeniu długości kanałów przy pomocy endometru. </p>
+			<h4 style="color: #1359c2"> Nasze usługi </h4>
+			<ul style="color: #1359c2">
+				
+				<li> Wypełnienia kompozytowe </li>
+				<li> Licówki kompozytowe </li>
+				<li> Korony kompozytowe </li>
+				<li> Profilaktyczne lakowanie zębów </li>
+			</ul>
+
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+    {% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

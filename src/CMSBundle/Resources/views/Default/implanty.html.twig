@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns">
+            <h2 style="text-align: center" class="uslugi_opis"> IMPLANTY </h2>
+				<p class="blue"> Implant jest to tytanowy korzeń zęba, który zrasta się z kością 4-6 miesięcy. Po tym czasie wykonuje się na implancie protetykę np. koronę.</p>
+				<h4 style="color: #1359c2"> Wykonujemy </h4>
+				<ul style="color: #1359c2">
+				
+				<li> implanty natychmiastowe na jednej wizycie jest usuwany ząb i wszczepiany implant</li>
+				<li>implanty klasyczne gdy już jest  usunięty zęb i wygojony zębodół</li>
+				<li> protezy wsparte na implantach dają mocne utrzymanie protezy </li>
+				<li>Protetykę alternatywna do implantów  w przypadku gdy jest konieczność wszczepiania dużej ilości implantów wykonujemy ekskluzywną protetykę  wspartą na własych zębach.Są to mosty,protezy na zasuwach .100% zadowolonych pacjentów </li> </ul>
+
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+    {% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

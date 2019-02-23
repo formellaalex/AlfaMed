@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns">
+            <h2 style="text-align: center" class="uslugi_opis"> ORTODONCJA </h2>
+				<p class="blue">
+				Leczeniem ortodontycznym zajmuje się w naszym gabinecie dr n.med. Anna Rosnowska Mazurkiewicz.
+				Dzięki naszemu leczeniu nie tylko  prostujemy zęby ale również poprawiamy rysy twarzy  a  uśmiech zmieniamy z ładnego w piękny. Efektem naszego leczenia są perfekcyjnie ustawione zęby i harmonijny uśmiech. </p>
+				<h4 style="text-align: center" class="uslugi_opis">LECZYMY  DOROSŁYCH  I  DZIECI </h4>
+				<p class="blue">
+				Leczenie trwa 1,5-2 lat zależnie od wady.
+				Dzięki zastosowaniu bardzo dobrych zamków dolegliwości bólowe są znacznie ograniczone, a zęby prostują się perfekcyjnie.
+				Proponujemy Państwu dwa rodzaje zamków metalowe lub plastikowe estetyczne.
+				Leczenie ortodontyczne wygląda nastepująco: <br />
+				1. Wizyta badanie pacjenta ,pobranie wycisków wstępnych, skierowanie na RTG.
+				2. Diagnostyka ustalenie planu leczenia. <br />
+				3. Założenie aparatu.<br />
+				4. Kontrolne wizyty co 4-5 tyg. Na wizytach zmienia się drut przebiegający w zamkach.<br />
+				5. Po wyleczeniu wady zdjęcie aparatu.<br />
+				6. Utrzymanie efektów - retencja.
+				</p>
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+	{% include 'CMSBundle::Templates/footer.html.twig' %}
+</footer>
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

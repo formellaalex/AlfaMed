@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamed</title>
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/foundation.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" >
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" >
+    <script src="{{ asset('bundles/framework/js/modernizr.js') }}" > </script>
+    <script src="{{ asset('bundles/framework/js/jquery.js') }}" ></script>
+    <script src="{{ asset('bundles/framework/js/foundation.min.js') }}"> </script>
+</head>
+<body>
+<noscript>
+<p style="text-align: center">
+    Nie masz włączonej obsługi JavaScript. Strona nie wyświetli się prawidłowo.
+</p>
+</noscript>
+
+<header>
+    {% include 'CMSBundle::Templates/header.html.twig' %}
+</header>
+<section id="content" >
+	<div class="row">
+        <div class="large-12 columns" style="margin-top: 5%">
+            <h2 class="title center margin_title"> PORADY ORTODONTYCZNE </h2>
+			<p class="blue"> Po założeniu stałego aparatu ortodontycznego mogą wystąpić dolegliwości bólowe utrzymujące się przez ok. 3 dni - jest to normalna reakcja na przesuwanie się zębów. W tym czasie prosimy <span class="strong"> NIE NAGRYZAĆ </span> twardych pokarmów; zalecamy zupy, mięsa mielone, serki homogenizowane. Nagryzanie znacznie nasila dolegliwości.  Po ok. 3 dniach dolegliwości zaczynają mijać. <br />
+			Podczas leczenia mogą wystąpić otarcia języka lub błony śluzowej policzków i warg,prosimy drażniące zamki i druty oklejać woskiem ortodontycznym i smarować otarte miejsca np. Dentoseptem A, Aperisanem żelem lub skontaktować się z gabinetem w celu skorygowania np.drutu. <br />
+			W trakcie noszenia aparatu należy szczotkować zęby dodatkowymi szczoteczkami do czyszczenia przestrzeni międzyzębowych np. Prokudent do kupienia w Rossmanie i dokładnie czyścić przestrzenie pod drutem na stycznych miedzy zębowych.
+			Podczas leczenia prosimy nie spożywać twardych pokarmów typu suchary, marchew, spieczona pizza, ponieważ mogą oderwać zamek. </p>
+
+
+        </div>
+    </div>
+	
+</section>
+
+<footer>
+	{% include 'CMSBundle::Templates/footer.html.twig' %}
+
+</footer>
+	
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

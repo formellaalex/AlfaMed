@@ -1,0 +1,18 @@
+CMSBundle\Entity\Promocje:
+    type: entity
+    table: null
+    repositoryClass: CMSBundle\Repository\PromocjeRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tytul:
+            type: string
+            length: 255
+        tresc:
+            type: string
+            length: '10000'
+    lifecycleCallbacks: {  }
