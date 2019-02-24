@@ -11,6 +11,11 @@ body {
 
 }
 
+meta.foundation-data-attribute-namespace {
+	font-family: false;
+
+}
+
 html, body {
 	height: 100%;
 }
@@ -20,8 +25,6 @@ a.blue:hover {
 }
 
 footer:not(#admin_footer) {
-
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 14%;
@@ -222,5 +225,9 @@ form {
 
 	#uslugi-mobile {
 		display: none;
+	}
+
+	footer:not(#admin_footer) {
+		position: fixed;
 	}
 }
