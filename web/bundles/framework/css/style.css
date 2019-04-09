@@ -62,7 +62,7 @@ footer:not(#admin_footer) {
 	margin-bottom: 5%;
 }
 
-.title {
+.title, .title a {
 	color: #376FC7;
 	font-weight: bold;
 }
@@ -122,7 +122,7 @@ footer:not(#admin_footer) {
 	height: 300px;
 }
 
-.section_offer {
+.section_offer a {
 	color: white;
 	font-family: "Tahoma", "sans-serif";
 	font-size: 1.4em;
