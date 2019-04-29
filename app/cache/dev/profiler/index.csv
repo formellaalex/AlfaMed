@@ -229,3 +229,8 @@ cbd7ff,127.0.0.1,GET,http://localhost:8000/kontakt,1554832572,,200
 b6dac0,127.0.0.1,GET,http://localhost:8000/kontakt,1554832605,,200
 9ad580,127.0.0.1,GET,http://localhost:8000/,1554832612,,200
 8761d3,127.0.0.1,GET,http://localhost:8000/kontakt,1554832613,,200
+9d2ebf,127.0.0.1,GET,http://localhost:8000/cennik,1554834982,,200
+374993,127.0.0.1,GET,http://localhost:8000/,1554834996,,200
+4be1a0,127.0.0.1,GET,http://localhost:8000/o_nas,1554834997,,200
+cc5b26,127.0.0.1,GET,http://localhost:8000/cennik,1554835001,,200
+8b6dcd,127.0.0.1,GET,http://localhost:8000/o_nas,1554835002,,200
